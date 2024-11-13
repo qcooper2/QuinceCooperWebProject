@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q Guides - Shop</title>
+  <link rel="stylesheet" href="project.css">
+  
+  <script src="https://www.paypal.com/sdk/js?client-id=BAAkxavUmWyWzF5WxN5DnUVZpREMJ92ULEDLS6lXWUGXGgeKCDBpzjNbhcGX5QNGHfsvzdyVEYQF5QqYGc&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+</head>
+<body>
+<header class="main-header">
+<h1>Q Guides - Shop</h1>
+<p class="tagline">Explore our exclusive game guides and merchandise</p>
+</header>
+
+<nav class="main-nav">
+<a href="index.html">Home</a>
+<a href="games.html">Games</a>
+<a href="forum.html">Forum</a>
+<a href="shop.html">Shop</a>
+<div class="search-bar">
+<input type="text" placeholder="Search" class="search-input"/>
+</div>
+</nav>
+
+<main class="content">
+<section class="shop-products">
+<h2>Shop Our Products</h2>
+<div class="product-grid">
+        
+<div class="product-card">
+<img src="product1.jpg" alt="Early Game Guide Pass" class="product-image">
+<h3>Early Game Guide Pass</h3>
+<p class="product-price">$2.00</p>
+<p class="product-description">Get early access to all the upcoming game guide's that will be added to the site.</p>
+<button class="add-to-cart" onclick="showPayPal()">Add to Cart</button>
+</div>
+
+<div id="paypal-container-EJEK4L6TH27YY" style="display: none; margin-top: 20px;"></div>
+      
+</section>
+</main>
+<footer class="main-footer">
+<p>&copy; 2024 Q Guides.</p>
+</footer>
+
+<script>
+function showPayPal() {
+document.getElementById('paypal-container-EJEK4L6TH27YY').style.display = 'block';
+
+paypal.HostedButtons({
+hostedButtonId: "EJEK4L6TH27YY",
+}).render("#paypal-container-EJEK4L6TH27YY");
+}
+</script>
+</body>
+</html>
