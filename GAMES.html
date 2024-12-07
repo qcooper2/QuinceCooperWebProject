@@ -13,7 +13,7 @@
 </header>
 
 <nav class="main-nav">
-<a href="HOME.html">Home</a>
+<a href="Index.html">Home</a>
 <a href="GAMES.html">Games</a>
 <a href="FORUM.html">Forum</a>
 <a href="SHOP.html">Shop</a>
@@ -42,39 +42,8 @@
 </div>
 </section>
 </main>
-
-<div id="search-data" style="display: none;">
-    <ul>
-        <li>Destiny 2: Festival of the Lost</li>
-        <li>Space Marine 2</li>
-        <li>The Finals</li>
-        <li>Black Myth Wukong</li>
-        <li>Monster Hunter World</li>
-    </ul>
-</div>
-
 <footer class="main-footer">
 <p>&copy; 2024 Q Guides.</p>
 </footer>
-
-<script>
-    document.getElementById('search-button').addEventListener('click', function () {
-        const query = document.getElementById('search-input').value.toLowerCase();
-        const searchData = document.querySelectorAll('#search-data ul li');
-        let results = [];
-
-        searchData.forEach((item) => {
-            if (item.textContent.toLowerCase().includes(query)) {
-                results.push(item.textContent);
-            }
-        });
-
-        if (results.length > 0) {
-            alert('Search Results:\n' + results.join('\n'));
-        } else {
-            alert('No results found.');
-        }
-    });
-</script>
 </body>
 </html>
